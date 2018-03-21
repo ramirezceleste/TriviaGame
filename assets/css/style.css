@@ -1,0 +1,23 @@
+body {
+    background-image: url(https://images.alphacoders.com/226/226091.jpg);
+    
+}
+
+.jumbotron {
+    background-image: url(https://pmcvariety.files.wordpress.com/2015/06/gameofthrones_logo.jpg?w=1000&h=563&crop=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    background-color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    color: lightgray;
+}
+
+button {
+    color: black;
+}
