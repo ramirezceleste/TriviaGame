@@ -21,3 +21,11 @@ body {
 button {
     color: black;
 }
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
