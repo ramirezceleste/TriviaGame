@@ -16,16 +16,10 @@ body {
     padding-right: 50px;
     padding-top: 50px;
     color: lightgray;
+    border-radius: 20px;
 }
 
 button {
     color: black;
 }
 
-.show {
-    display: block;
-}
-
-.hide {
-    display: none;
-}
