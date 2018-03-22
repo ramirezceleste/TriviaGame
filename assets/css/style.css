@@ -1,5 +1,7 @@
 body {
-    background-image: url(https://images.alphacoders.com/226/226091.jpg);
+    /* background-image: url(https://images.alphacoders.com/226/226091.jpg); */
+    color: white;
+    background-color: black;
     
 }
 
@@ -10,16 +12,9 @@ body {
     background-position: center;
 }
 
-.container {
-    background-color: black;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    color: lightgray;
-    border-radius: 20px;
-}
-
 button {
     color: black;
 }
+
+
 

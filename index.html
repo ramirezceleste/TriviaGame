@@ -15,188 +15,236 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Style link  -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-        <audio autoplay>
-                <source src="assets/music/themesong.mp3">
-        </audio>
-        
+
+    <audio autoplay>
+        <source src="assets/music/themesong.mp3">
+    </audio>
+
     <div class="jumbotron">
         <br>
         <br>
     </div>
 
-    <div class="container" id="disappear">
-        <div class="row"> 
-            <div class="startButton text-center">
-                <button type="button" class="startButton btn-lg" id="start-button">Start trivia game!</button>
-                <br>
-                <br>
+    <div id="disappear">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="assets/images/Begin.gif" class="images" id="thrones">
+            </div>
+            &nbsp;&nbsp;
+            <div class="col-md-12">
+                <div class="startButton text-center">
+                    <button type="button" class="startButton btn-lg" id="start-button">Start trivia game!</button>
+                    <br>
+                    <br>
+                </div>
             </div>
         </div>
     </div>
 
-   <div class="container" id="hide-div">
+    <div id="goneGameOver">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="assets/images/Ends.gif" class="images" id="thrones">
+            </div>
+            &nbsp;&nbsp;
+            <div class="col-md-12">
+                <div class="gameOverButton text-center">
+                    <button type="button" class="gameOverButton btn-lg" id="gameOver">Game Over! Check your results</button>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="hide-div">
             <div class="row">
-                    <h2>Time left: <span id="timeLeft"></span></h2>
+                <h2>Time left:
+                    <span id="timeLeft"></span>
+                </h2>
             </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="questions">
-                    <h4>1. What is the surname given to bastards born in Dorne?</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="questions">
+                        <h4>1. What is the surname given to bastards born in Dorne?</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            <form class="options">
+                                <input class="option" type="radio" name="question1" value="1"> Stone
+                                <br>
+                                <br>
+                                <input class="option" type="radio" name="question1" value="2"> Waters
+                                <br>
+                                <br>
+                                <input class="option" type="radio" name="question1" value="3"> Rivers
+                                <br>
+                                <br>
+                                <!-- correct -->
+                                <input class="option" type="radio" name="question1" value="4"> Sand</br>
+                            </form>
+                        </p>
+                    </div>
                 </div>
-                <div class="panel-body">
-                    <p>
-                        <form class="options">
-                            <input class="option" type="radio" name="question1" value=1> Stone
-                            <br>
-                            <br>
-                            <input class="option" type="radio" name="question1" value=2> Waters
-                            <br>
-                            <br>
-                            <input class="option" type="radio" name="question1" value=3> Rivers
-                            <br>
-                            <br>
-                            <!-- correct -->
-                            <input class="option" type="radio" name="question1" value=4> Sand</br>
-                        </form>
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="assets/images/Game of thrones.gif" class="images" id="thrones">
-            </div>
-        </div>
-        <br>
-
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <img src="assets/images/Mountain.gif" class="images" id="mountain">
-            </div>
-            <div class="col-md-6">
-                <div class="questions">
-                    <h4>2. "The Mountain" is the nickname for which character?</h4>
-                </div>
-                <div class="panel-body">
-                    <p>
-                        <form class="options">
-                            <!-- correct -->
-                            <input class="option" type="radio" name="question2" value=1> Gregor Clegane
-                            <br>
-                            <br>
-                            <input class="option" type="radio" name="question2" value=2> Oberyn Martell
-                            <br>
-                            <br>
-                            <input class="option" type="radio" name="question2" value=3> Sandor Clegane
-                            <br>
-                            <br>
-                            <input class="option" type="radio" name="question2" value=4> Gerold Clegane</br>
-                        </form>
-                    </p>
+                <div class="col-md-6 text-center">
+                    <img src="assets/images/Game of thrones.gif" class="images" id="thrones">
                 </div>
             </div>
-        </div>
-        <br>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="questions">
-                    <h4>3. What is the name of Jon's direwolf?</h4>
-                </div>
-                <div class="panel-body">
-                    <p>
-                        <form class="options">
-                            <input class="option" type="radio" name="question3" value=1> Nymeria
-                            <br>
-                            <br>
-                            <!-- correct -->
-                            <input class="option" type="radio" name="question3" value=2> Ghost
-                            <br>
-                            <br>
-                            <input class="option" type="radio" name="question3" value=3> Summer
-                            <br>
-                            <br>
-                            <input class="option" type="radio" name="question3" value=4> Wind</br>
-                        </form>
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="assets/images/Wolf.gif" class="images" id="wolf">
-            </div>
-        </div>
-        <br>
-
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <img src="assets/images/Bow.gif" class="images" id="bow">
-            </div>
-            <div class="col-md-6">
-                <div class="questions">
-                    <h4>4. Which character said "I always hated crossbows. Take too long to load!"</h4>
-                </div>
-                <div class="panel-body">
-                    <p>
-                        <form class="options">
-                            <!-- correct -->
-                            <input class="option" type="radio" name="question4" value=1> Yoren
-                            <br>
-                            <br>
-                            <input class="option" type="radio" name="question4" value=2> Robb Stark
-                            <br>
-                            <br>
-                            <input class="option" type="radio" name="question4" value=3> Jory Cassel
-                            <br>
-                            <br>
-                            <input class="option" type="radio" name="question4" value=4> Rodrik Cassel</br>
-                        </form>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <br>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="questions">
-                    <h4>5. How many fingertips did Stannis Baratheon chop off of Davos' hand(s)?</h4>
-                </div>
-                <div class="panel-body">
-                    <p>
-                        <form class="options">
-                            <input class="option" type="radio" name="question5" value=1> 5
-                            <br>
-                            <br>
-                            <input class="option" type="radio" name="question5" value=2> 3
-                            <br>
-                            <br>
-                            <!-- correct -->
-                            <input class="option" type="radio" name="question5" value=3> 4
-                            <br>
-                            <br>
-                            <input class="option" type="radio" name="question5" value=4> 2</br>
-                        </form>
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="assets/images/Fingers.gif" class="images" id="fingers">
-            </div>
-        </div>
-        <br>
-
-        <div class="row">
-            <button type="button" class="submitButton btn-lg">Submit Quiz</button>
             <br>
+
+            <div class="row">
+                <div class="col-md-7 text-center">
+                    <img src="assets/images/Mountain.gif" class="images" id="mountain">
+                </div>
+                <div class="col-md-4">
+                    <div class="questions">
+                        <h4>2. "The Mountain" is the nickname for which character?</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            <form class="options">
+                                <!-- correct -->
+                                <input class="option" type="radio" name="question2" value="1"> Gregor Clegane
+                                <br>
+                                <br>
+                                <input class="option" type="radio" name="question2" value="2"> Oberyn Martell
+                                <br>
+                                <br>
+                                <input class="option" type="radio" name="question2" value="3"> Sandor Clegane
+                                <br>
+                                <br>
+                                <input class="option" type="radio" name="question2" value="4"> Gerold Clegane</br>
+                            </form>
+                        </p>
+                    </div>
+                </div>
+            </div>
             <br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="questions">
+                        <h4>3. What is the name of Jon's direwolf?</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            <form class="options">
+                                <input class="option" type="radio" name="question3" value="1"> Nymeria
+                                <br>
+                                <br>
+                                <!-- correct -->
+                                <input class="option" type="radio" name="question3" value="2"> Ghost
+                                <br>
+                                <br>
+                                <input class="option" type="radio" name="question3" value="3"> Summer
+                                <br>
+                                <br>
+                                <input class="option" type="radio" name="question3" value="4"> Wind</br>
+                            </form>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="assets/images/Wolf.gif" class="images" id="wolf">
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-7 text-center">
+                    <img src="assets/images/Bow.gif" class="images" id="bow">
+                </div>
+                <div class="col-md-4">
+                    <div class="questions">
+                        <h4>4. Which character said "I always hated crossbows. Take too long to load!"</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            <form class="options">
+                                <!-- correct -->
+                                <input class="option" type="radio" name="question4" value="1"> Yoren
+                                <br>
+                                <br>
+                                <input class="option" type="radio" name="question4" value="2"> Robb Stark
+                                <br>
+                                <br>
+                                <input class="option" type="radio" name="question4" value="3"> Jory Cassel
+                                <br>
+                                <br>
+                                <input class="option" type="radio" name="question4" value="4"> Rodrik Cassel</br>
+                            </form>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="questions">
+                        <h4>5. How many fingertips did Stannis Baratheon chop off of Davos' hand(s)?</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            <form class="options">
+                                <input class="option" type="radio" name="question5" value="1"> 5
+                                <br>
+                                <br>
+                                <input class="option" type="radio" name="question5" value="2"> 3
+                                <br>
+                                <br>
+                                <!-- correct -->
+                                <input class="option" type="radio" name="question5" value="3"> 4
+                                <br>
+                                <br>
+                                <input class="option" type="radio" name="question5" value="4"> 2</br>
+                            </form>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="assets/images/Fingers.gif" class="images" id="fingers">
+                </div>
+
+            </div>
+            <br>
+
+            <div class="row">
+                <button type="button" class="submitButton btn-lg" id="submit-button">Submit Quiz</button>
+                <br>
+                <br>
+            </div>
+
         </div>
 
-    </div>
+        <div id="results">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="assets/images/results.gif" class="images" id="thrones">
+                </div>
+                <div class="col-md-12">
+                    <div class="results text-center">
+                        <h2>
+                            <span id="correct"></span>
+                        </h2>
+                        <h2>
+                            <span id="incorrect"></span>
+                        </h2>
+                        <h2>
+                            <span id="unanswered"></span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-    <script src="assets/javascript/app.js"></script>
+        <script src="assets/javascript/app.js"></script>
 </body>
 
 </html>
