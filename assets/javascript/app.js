@@ -1,10 +1,10 @@
-// Create a start button function, game over function, submit button function
+// Create a start button function, game over button function, submit button function
 // Hide and show each when needed
 
 $("#hide-div").hide();
 $("#goneGameOver").hide();
 $("#results").hide();
-var counter = 30;
+var counter = 45;
 var intervalId;
 
 // Create start button function 
@@ -14,7 +14,7 @@ $("#start-button").on("click", function () {
     $("#disappear").hide();
     $("#hide-div").show();
     $("#timeLeft").text(counter);
-    counter = 30;
+    counter = 45;
 
 // Timer function 
 
